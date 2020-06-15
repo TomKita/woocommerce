@@ -5,7 +5,7 @@ namespace Corcel\WooCommerce\Model;
 use Carbon\Carbon;
 use Corcel\Model\Post;
 use Corcel\WooCommerce\Classes\Payment;
-use Corcel\WooCommerce\Builder\OrderBuilder;
+use Corcel\WooCommerce\Model\Builder\OrderBuilder;
 use Corcel\WooCommerce\Traits\AddressesTrait;
 
 class Order extends Post
