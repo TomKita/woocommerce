@@ -1,6 +1,6 @@
 <?php
 
-namespace Corcel\WooCommerce;
+namespace Corcel\WooCommerce\Classes;
 
 use Corcel\Model\Collection\MetaCollection;
 
