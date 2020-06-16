@@ -3,11 +3,10 @@
 namespace Corcel\WooCommerce\Classes;
 
 use Corcel\Model\Collection\MetaCollection;
+use Illuminate\Support\Collection;
 
-class Address
+class Address extends Collection
 {
-    protected $items = [];
-
     /**
      * @param $class
      * @param MetaCollection $meta
@@ -21,13 +20,6 @@ class Address
             $meta_key = $this->getMetaKey($class, $type, $key);
 
             $this->items[$key] = $meta->$meta_key;
-        }
-    }
-
-    public function __get($key)
-    {
-        if (array_key_exists($key, $this->data)) {
-            return $this->data[$key];
         }
     }
 
